@@ -5,20 +5,28 @@
 }
 
 <h2>Customers</h2>
-
-<table class="table table-bordered table-hover">
-    <thead>
-        <tr>
-            <th>Customer</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var customer in Model)
-        {
+@if (!Model.Any())
+{
+    <text>We don't have any customers yet.</text>
+}
+else
+{
+    <table class="table table-bordered table-hover">
+        <thead>
             <tr>
-                <td>@Html.ActionLink(@customer.Name, "Details", "Customers", new { Id = @customer.Id }, null)</td>
+                <th>Customer</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var customer in Model)
+            {
+                <tr>
+                    <td>@Html.ActionLink(@customer.Name, "Details", "Customers", new { Id = @customer.Id }, null)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
 
