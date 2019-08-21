@@ -5,11 +5,9 @@ using System.Web;
 
 namespace Vidly.Models
 {
-    public class Movie
+    public class GenreType
     {
-        public int Id { get; set; }
+        public byte Id { get; set; }
         public string Name { get; set; }
-        public GenreType GenreType { get; set; }
-        public byte GenreTypeId { get; set; }
     }
 }
