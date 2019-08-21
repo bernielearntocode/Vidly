@@ -6,9 +6,12 @@
 
 <h2>@Model.Name</h2>
 
-<li>Membership Type: @Model.MembershipType.Name</li>
-@if (Model.DOB != null)
-{
-    <li>DOB: @Model.DOB</li>
-}
+<ul>
+    <li>Membership Type: @Model.MembershipType.Name</li>
+    @if (Model.DOB != null)
+    {
+        <li>DOB: @Model.DOB</li>
+    }
+</ul>
+
 
