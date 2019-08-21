@@ -231,6 +231,10 @@
     <Compile Include="Migrations\201908210057193_UpdateMembershipTypesName.Designer.cs">
       <DependentUpon>201908210057193_UpdateMembershipTypesName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201908210550390_AddDOBToCustomer.cs" />
+    <Compile Include="Migrations\201908210550390_AddDOBToCustomer.Designer.cs">
+      <DependentUpon>201908210550390_AddDOBToCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -341,6 +345,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201908210057193_UpdateMembershipTypesName.resx">
       <DependentUpon>201908210057193_UpdateMembershipTypesName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908210550390_AddDOBToCustomer.resx">
+      <DependentUpon>201908210550390_AddDOBToCustomer.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
