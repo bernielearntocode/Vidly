@@ -247,6 +247,10 @@
     <Compile Include="Migrations\201908211122108_SeedingGenreTypes.Designer.cs">
       <DependentUpon>201908211122108_SeedingGenreTypes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201908221102176_AddAttributesToMovie.cs" />
+    <Compile Include="Migrations\201908221102176_AddAttributesToMovie.Designer.cs">
+      <DependentUpon>201908221102176_AddAttributesToMovie.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -371,6 +375,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201908211122108_SeedingGenreTypes.resx">
       <DependentUpon>201908211122108_SeedingGenreTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908221102176_AddAttributesToMovie.resx">
+      <DependentUpon>201908221102176_AddAttributesToMovie.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
